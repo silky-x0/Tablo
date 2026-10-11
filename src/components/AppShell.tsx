@@ -15,8 +15,9 @@ export function AppShell({ title, action, children }: { title: string; action?: 
   return (
     <div className="min-h-screen bg-background pb-24 md:pb-0 md:pl-24">
       <aside className="fixed inset-x-0 bottom-0 z-20 flex border-t border-border bg-card md:inset-y-0 md:left-0 md:right-auto md:w-24 md:flex-col md:border-r md:border-t-0 md:pt-6">
-        <div className="hidden md:mb-6 md:block md:text-center font-display text-lg leading-tight text-primary">
-          Tablo
+        <div className="hidden md:mb-6 md:flex md:flex-col md:items-center md:gap-1.5">
+          <img src="/assets/logo-192.png" alt="Tablo logo" className="h-11 w-11 rounded-2xl shadow-sm" />
+          <span className="font-display text-lg leading-tight text-primary">Tablo</span>
         </div>
         {nav.map(({ to, label, icon: Icon }) => (
           <Link
@@ -33,7 +34,10 @@ export function AppShell({ title, action, children }: { title: string; action?: 
       </aside>
       <header className="sticky top-0 z-10 grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3 border-b border-border bg-background/90 px-4 py-3 backdrop-blur md:px-8">
         <div className="min-w-0">
-          <p className="text-xs uppercase tracking-widest text-secondary-foreground md:hidden">Tablo</p>
+          <p className="flex items-center gap-1.5 text-xs uppercase tracking-widest text-secondary-foreground md:hidden">
+            <img src="/assets/logo-192.png" alt="" className="h-4 w-4 rounded" />
+            Tablo
+          </p>
           <h1 className="truncate font-display text-2xl text-foreground md:text-3xl">{title}</h1>
         </div>
         {action}
