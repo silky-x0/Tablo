@@ -1,29 +1,50 @@
-# Goa Choice Order
+# Tablo
 
-Create an order management system for a cafe named "Goa Choice".
+Tablo is an offline-first order-management product for cafes and restaurants.
+Take table orders, manage the menu, settle bills, and track sales — on Android
+mobile, tablet, or the web preview.
 
-Key requirements and features:
-- Responsive UI tailored for both Android mobile and tablet screens
-- Table management across multiple tables with live status and active order tracking
-- Product catalog: owner can add, edit, and delete products with photos, pricing, and categories
-- Table order summary: select items, view active table orders, calculate totals, and settle bills
-- Full day summary: daily revenue, order counts, and item breakdown
-- Stored locally: keep the last 30 days of data on-device with efficient queries and state management
-- Tech stack: React + Vite + Capacitor setup, using local storage/SQLite with browser-compatible local storage fallback so it works seamlessly both in web preview and when packaged for Android
+## Features
 
-This project was built with [Lovable](https://lovable.dev).
+### Tables
+- Live table grid with Occupied / Free status, running total, item count, and order start time
+- Configurable table count (1–60) with add / remove controls
+- Table aliases (e.g. Rahul, VIP Booth) with add, edit, and clear
+- Tap a table to open its order
 
-## Build with Lovable
+### Ordering & billing
+- Category filter pills (All + every menu category) and fast-tap product grid with photos
+- Quantity badges on items already in the order
+- Active order panel with quantity steppers, line totals, and order total in INR
+- Clear table and settle-bill flows with confirmation
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/0787c5dd-539d-4af9-8b50-e40fe888f173).
+### Menu management
+- Add, edit, and delete products with name, price, category, and optional photo
+- Category-grouped menu list
+- Seeded demo menu on first run so the app is usable immediately
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+### Sales & reports
+- Daily summary: revenue, orders, average bill, items sold, and settled bills, with day navigation (up to 180 days back)
+- Monthly comparison: revenue, orders, and average ticket for the selected month vs the previous month, with diff and percent change
+- Item performance comparison per product (quantity, revenue, change, trend indicators)
+- Performance overview and growth commentary
+
+### Offline-first storage
+- On-device SQLite via `@capacitor-community/sqlite` on Android
+- Same database on web via `jeep-sqlite` + IndexedDB, so the web preview works without native code
+- In-memory UI state with write-through to SQLite for instant taps and survival across restarts
+- 6-month (180-day) retention for settled bills, enforced with an indexed range delete
+
+## Tech stack
+
+- React 19 + Vite + TanStack Router / Start + TanStack Query
+- Tailwind CSS 4
+- Capacitor 8 for Android packaging
+- TypeScript, Vitest
 
 ## Development
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
 
 ```sh
 git clone <this-repository-url>
@@ -31,3 +52,15 @@ cd <repository-name>
 npm i
 npm run dev
 ```
+
+Useful scripts:
+
+```sh
+npm test          # run Vitest suite
+npm run build     # web / SSR build
+npm run cap:apk   # mobile web build + Capacitor sync + Gradle debug APK (see scripts/build-apk.cjs)
+```
+
+## Credits
+
+Tablo's UI was made with [Lovable](https://lovable.dev).
