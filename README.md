@@ -4,6 +4,29 @@ Tablo is an offline-first order-management product for cafes and restaurants.
 Take table orders, manage the menu, settle bills, and track sales — on Android
 mobile, tablet, or the web preview.
 
+## Screenshots
+
+> Drop screenshots in `docs/screenshots/` and they will show up below.
+
+| Tables | Table order | Menu | Sales & reports |
+| --- | --- | --- | --- |
+| ![Tables](docs/screenshots/tables.png) | ![Table order](docs/screenshots/table-order.png) | ![Menu](docs/screenshots/menu.png) | ![Sales and reports](docs/screenshots/reports.png) |
+
+Suggested captures: occupied/free table grid, category pills + order panel,
+menu manager, daily/monthly reports (mobile + tablet if possible).
+
+## Download
+
+The installable Android build is published as an APK on
+[GitHub Releases](../../releases).
+
+- Download the latest `Tablo-debug.apk` (or versioned `Tablo-vX.Y.Z.apk`) from Releases
+- Install it directly on Android (enable Install unknown apps if prompted)
+- No server or account needed — all data stays on-device
+
+Maintainer note: build with `npm run cap:apk`, then attach the resulting
+`Tablo-debug.apk` to a new GitHub Release.
+
 ## Features
 
 ### Tables
