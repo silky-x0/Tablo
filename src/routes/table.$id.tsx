@@ -87,7 +87,7 @@ function TablePage() {
                 key={c}
                 onClick={() => setCat(c)}
                 aria-pressed={safeCat === c}
-                className={`shrink-0 rounded-full px-4 py-2 text-sm font-medium ${safeCat === c ? "bg-secondary text-secondary-foreground" : "bg-muted text-muted-foreground"}`}
+                className={`shrink-0 rounded-full px-4 py-2 text-sm font-medium transition-colors ${safeCat === c ? "bg-primary text-primary-foreground shadow-sm" : "bg-muted text-muted-foreground hover:bg-muted/70 hover:text-foreground"}`}
               >
                 {c}
               </button>
