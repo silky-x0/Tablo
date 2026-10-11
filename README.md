@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="public/assets/logo-192.png" alt="Tablo logo" width="120" />
+</p>
+
 # Tablo
 
 Tablo is an offline-first order-management product for cafes and restaurants.
