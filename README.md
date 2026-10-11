@@ -14,7 +14,7 @@ mobile, tablet, or the web preview.
 
 | Tables | Table order | Menu | Sales & reports |
 | --- | --- | --- | --- |
-| ![Tables](docs/screenshots/tables.png) | ![Table order](docs/screenshots/table-order.png) | ![Menu](docs/screenshots/menu.png) | ![Sales and reports](docs/screenshots/reports.png) |
+| ![Tables](docs/screenshots/tables.jpg) | ![Table order](docs/screenshots/table-order.jpg) | ![Menu](docs/screenshots/menu.jpg) | ![Sales and reports](docs/screenshots/reports.jpg) |
 
 Suggested captures: occupied/free table grid, category pills + order panel,
 menu manager, daily/monthly reports (mobile + tablet if possible).
