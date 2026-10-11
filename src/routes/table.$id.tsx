@@ -7,9 +7,9 @@ import { actions, inr, totalOf, useStore } from "@/lib/store";
 export const Route = createFileRoute("/table/$id")({
   head: ({ params }) => ({
     meta: [
-      { title: `Table ${params.id} — Goa Choice Cafe` },
+      { title: `Table ${params.id} — Tablo` },
       { name: "description", content: `Take and settle the order for table ${params.id}.` },
-      { property: "og:title", content: `Table ${params.id} — Goa Choice Cafe` },
+      { property: "og:title", content: `Table ${params.id} — Tablo` },
       { property: "og:description", content: `Take and settle the order for table ${params.id}.` },
     ],
   }),

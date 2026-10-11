@@ -20,12 +20,12 @@ import {
 export const Route = createFileRoute("/summary")({
   head: () => ({
     meta: [
-      { title: "Sales Summary & Reports — Goa Choice Cafe" },
+      { title: "Sales Summary & Reports — Tablo" },
       {
         name: "description",
         content: "Daily and monthly sales reports, revenue trends, and month-over-month comparison.",
       },
-      { property: "og:title", content: "Sales Summary & Reports — Goa Choice Cafe" },
+      { property: "og:title", content: "Sales Summary & Reports — Tablo" },
       {
         property: "og:description",
         content: "Daily and monthly sales reports, revenue trends, and month-over-month comparison.",

@@ -7,10 +7,10 @@ import { actions, fileToPhoto, inr, useStore, type Product } from "@/lib/store";
 export const Route = createFileRoute("/products")({
   head: () => ({
     meta: [
-      { title: "Menu — Goa Choice Cafe" },
-      { name: "description", content: "Manage Goa Choice menu items, photos, prices and categories." },
-      { property: "og:title", content: "Menu — Goa Choice Cafe" },
-      { property: "og:description", content: "Manage Goa Choice menu items, photos, prices and categories." },
+      { title: "Menu — Tablo" },
+      { name: "description", content: "Manage menu items, photos, prices and categories." },
+      { property: "og:title", content: "Menu — Tablo" },
+      { property: "og:description", content: "Manage menu items, photos, prices and categories." },
     ],
   }),
   component: Products,

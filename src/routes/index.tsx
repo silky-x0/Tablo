@@ -7,10 +7,10 @@ import { actions, inr, totalOf, useStore } from "@/lib/store";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Tables — Goa Choice Cafe" },
-      { name: "description", content: "Live table status and active orders at Goa Choice cafe." },
-      { property: "og:title", content: "Tables — Goa Choice Cafe" },
-      { property: "og:description", content: "Live table status and active orders at Goa Choice cafe." },
+      { title: "Tables — Tablo" },
+      { name: "description", content: "Live table status and active orders." },
+      { property: "og:title", content: "Tables — Tablo" },
+      { property: "og:description", content: "Live table status and active orders." },
     ],
   }),
   component: Tables,

@@ -45,7 +45,7 @@ if (result.status !== 0) {
 
 // Locate output APK
 const outputApk = path.join(androidDir, 'app', 'build', 'outputs', 'apk', 'debug', 'app-debug.apk');
-const rootApk = path.join(rootDir, 'GoaChoice-debug.apk');
+const rootApk = path.join(rootDir, 'Tablo-debug.apk');
 
 if (fs.existsSync(outputApk)) {
   fs.copyFileSync(outputApk, rootApk);

@@ -78,8 +78,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1, viewport-fit=cover" },
-      { title: "Goa Choice — Cafe Orders" },
-      { name: "description", content: "Order management for Goa Choice cafe." },
+      { title: "Tablo" },
+      { name: "description", content: "Tablo — table orders, menu and sales reports for cafes and restaurants." },
       { name: "theme-color", content: "#c8603a" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
